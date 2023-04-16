@@ -56,6 +56,10 @@ html {
   font-size: 16px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .cabecera .menu {
   justify-content: space-between;
   display: flex;
@@ -91,13 +95,28 @@ html {
   background: #14e814;
 }
 
-a {
+.link {
   font-family: "Poppins";
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 2.25rem;
   color: black;
   text-decoration: none;
+}
+.link1 {
+  color: black;
+}
+.link2 {
+  color: red;
+}
+
+.container {
+  width: min(100%, 80rem);
+  padding: 0 1rem;
+  margin: auto;
+}
+.container2 {
+  width: min(100%, 50rem);
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,0 +1,12 @@
+.container{
+    width: min(100%,80rem);
+    padding: 0 1rem ;
+    margin: auto;
+    &1{
+
+    }
+    &2{
+        width: min(100%,50rem);
+
+    }
+}

@@ -1,9 +1,11 @@
 import {Link} from '../Link';
 import {Button} from "../Button";
+import { Container } from '../Container';
 
 export const Header = () => {
   return (
     <header className='cabecera'>
+      <Container>
       <nav className='menu'>
         <div className='columna1'>
           <Link href="/">
@@ -21,15 +23,17 @@ export const Header = () => {
         <div className='columna3'>
           <Link href="/login">Log in</Link>
           <Link href="/signup">
-           <Button text='Sign Up ' />
+           <Button>
+            Sign Up
+            </Button>
           </Link>
 
         </div>
-
+ 
 
 
       </nav>
-
+      </Container>
 
     </header>
   );
