@@ -61,14 +61,6 @@ html {
   display: flex;
   align-items: center;
 }
-.cabecera .menu a {
-  font-family: "Poppins";
-  font-size: 1.5rem;
-  font-weight: 400;
-  line-height: 2.25rem;
-  color: black;
-  text-decoration: none;
-}
 .cabecera .menu .columna2 {
   display: flex;
   gap: 3.37rem;
@@ -79,7 +71,7 @@ html {
   align-items: center;
 }
 
-.boton1 {
+.btn {
   font-family: "Poppins";
   font-weight: 500;
   font-size: 1.5rem;
@@ -90,8 +82,22 @@ html {
   padding-right: 3.12rem;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-  background: #E87A14;
   color: white;
+}
+.btn1 {
+  background: #E87A14;
+}
+.btn2 {
+  background: #14e814;
+}
+
+a {
+  font-family: "Poppins";
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.25rem;
+  color: black;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=index.css.map */
