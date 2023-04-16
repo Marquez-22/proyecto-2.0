@@ -1,7 +1,9 @@
 .cabecera{
     
     .menu{
-        
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
 
         a{
             font-family:'Poppins';
@@ -10,14 +12,21 @@
             line-height: 2.25rem;
             color:black;
             text-decoration: none;
+            
+        }
+        .columna2{
+            display: flex;
+            gap: 3.37rem;
         }
         
         .logo{
             
         }
         
-        .boton{
-            
+        .columna3{
+            display: flex;
+            gap: 3rem;
+            align-items: center;
         }
     }
 }

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import {Button} from "../Button";
 
 export const Header = () => {
   return (
@@ -20,7 +21,7 @@ export const Header = () => {
         <div className='columna3'>
           <Link href="/login">Log in</Link>
           <Link href="/signup">
-            <button className='boton1'>Sign Up</button>
+           <Button text='Sign Up ' />
           </Link>
 
         </div>
