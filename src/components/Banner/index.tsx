@@ -8,35 +8,35 @@ type BannerType = "banner1" | "banner2"
 interface BannerProps {
     children?: ReactNode
     type?: BannerType
+    title: string
+    button:string
+    text:string
+    img:string 
+
 }
 
-export const Banner = ({ children, type = "banner1" }: BannerProps) => {
+export const Banner = ({ children, type = "banner1",text="",button="",img="",title=""}: BannerProps) => {
     return (<>
         <Container>
             <div className={`banner ${type}`}>
-
                 <div className="columna1">
                     <div className="content-info">
                         <Text className="titulo" type="text2" >
-                            Trendiest Fashion ever
-
+                            {title}
                         </Text>
-
                         <Text className="parrafo">
-                            When you are in doubt,
-                            wear a Viss Fashions
-                            Denim
+                        {text}
                         </Text>
 
                         <Button className="boton" >
-                            Buy now
+                        {button}
                         </Button>
                     </div>
                 </div>
 
 
                 <div className="columna2">
-                    <img src="/images/banner.png"></img>
+                    <img src={img}></img>
                 </div>
 
 

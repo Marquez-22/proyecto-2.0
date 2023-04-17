@@ -1,8 +1,8 @@
 import Layout from "../components/Layout"
 
-const SigninPages = () =>(
+const SignupPages = () =>(
     <Layout title="Iniciar Sesion"></Layout>   
     
 )
 
-export default SigninPages
+export default SignupPages

@@ -3,8 +3,13 @@ import Layout from '../components/Layout'
 import { Banner } from '../components/Banner'
 
 const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
-    <Banner/>
+  <Layout title="Home">
+    <Banner
+      title='Trendiest Fashion ever'
+      text='When you are in doubt, wear a Viss Fashions Denim'
+      button='Buy now'
+      img='/images/banner.png'
+    />
   </Layout>
 )
 
