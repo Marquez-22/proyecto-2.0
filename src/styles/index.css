@@ -151,6 +151,8 @@ html {
   flex: 1;
   justify-content: end;
   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .banner .columna2 img {
   width: min(100%, 20rem);
@@ -160,6 +162,15 @@ html {
 }
 .banner .parrafo {
   margin-bottom: 3.68rem;
+}
+.banner2 .parrafo {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.banner3 .columna2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
 }
 
 /*# sourceMappingURL=index.css.map */

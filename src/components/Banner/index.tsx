@@ -3,19 +3,19 @@ import { Text } from "../Text"
 import { Button } from "../Button"
 import { Container } from "../Container"
 
-type BannerType = "banner1" | "banner2"
+type BannerType = "banner1" | "banner2"|"banner3"
 
 interface BannerProps {
     children?: ReactNode
     type?: BannerType
     title: string
-    button:string
-    text:string
-    img:string 
+    button: string
+    text: string
+    img: string | string[]
 
 }
 
-export const Banner = ({ children, type = "banner1",text="",button="",img="",title=""}: BannerProps) => {
+export const Banner = ({ children, type = "banner1", text = "", button = "", img = "", title = "" }: BannerProps) => {
     return (<>
         <Container>
             <div className={`banner ${type}`}>
@@ -25,21 +25,27 @@ export const Banner = ({ children, type = "banner1",text="",button="",img="",tit
                             {title}
                         </Text>
                         <Text className="parrafo">
-                        {text}
+                            {text}
                         </Text>
 
                         <Button className="boton" >
-                        {button}
+                            {button}
                         </Button>
                     </div>
                 </div>
 
 
                 <div className="columna2">
-                    <img src={img}></img>
+                    {
+                        [img].flat(2).map((elemento,index)=>{
+                            return (
+                                <>
+                                    <img key={index} src={elemento}></img>
+                                </>
+                            )
+                        })
+                    }
                 </div>
-
-
 
             </div>
         </Container>

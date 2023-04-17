@@ -1,39 +1,44 @@
 .banner {
     display: flex;
     justify-content: left;
-
     .columna1 {
         flex:1;
         align-items: end;
         display: flex;
         flex-wrap: wrap;
-
-
     }
-    
     .columna2 {
         flex: 1;
         justify-content: end;
         display: flex;
-    
+        align-items: center;
+        flex-wrap: wrap;
         img{
             width:min(100%,20rem);  
         }
     }
-
-    .content-info{
-        
-    }
-
-
     .titulo{
         margin-bottom: 0.81rem;
     }
     .parrafo{
         margin-bottom: 3.68rem;
     }
-     
-   
 
+    &1{
 
+    }
+    &2{
+        .parrafo{
+            font-size: 1rem;
+            line-height: 1.5rem;
+        }
+    }
+    &3{
+        .columna2{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 1rem;
+
+        }
+    }
 }
