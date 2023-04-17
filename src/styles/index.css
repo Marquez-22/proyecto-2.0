@@ -64,6 +64,7 @@ html {
   justify-content: space-between;
   display: flex;
   align-items: center;
+  margin-bottom: 3.56rem;
 }
 .cabecera .menu .columna2 {
   display: flex;
@@ -117,6 +118,48 @@ html {
 }
 .container2 {
   width: min(100%, 50rem);
+}
+
+.text {
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 3rem;
+  line-height: 4.5rem;
+  letter-spacing: 0.1em;
+  color: black;
+}
+.text2 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 1.87rem;
+  line-height: 2.81rem;
+  color: rgba(68, 195, 235, 0.8);
+  text-transform: uppercase;
+}
+
+.banner {
+  display: flex;
+  justify-content: left;
+}
+.banner .columna1 {
+  flex: 1;
+  align-items: end;
+  display: flex;
+  flex-wrap: wrap;
+}
+.banner .columna2 {
+  flex: 1;
+  justify-content: end;
+  display: flex;
+}
+.banner .columna2 img {
+  width: min(100%, 20rem);
+}
+.banner .titulo {
+  margin-bottom: 0.81rem;
+}
+.banner .parrafo {
+  margin-bottom: 3.68rem;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,0 +1,39 @@
+.banner {
+    display: flex;
+    justify-content: left;
+
+    .columna1 {
+        flex:1;
+        align-items: end;
+        display: flex;
+        flex-wrap: wrap;
+
+
+    }
+    
+    .columna2 {
+        flex: 1;
+        justify-content: end;
+        display: flex;
+    
+        img{
+            width:min(100%,20rem);  
+        }
+    }
+
+    .content-info{
+        
+    }
+
+
+    .titulo{
+        margin-bottom: 0.81rem;
+    }
+    .parrafo{
+        margin-bottom: 3.68rem;
+    }
+     
+   
+
+
+}

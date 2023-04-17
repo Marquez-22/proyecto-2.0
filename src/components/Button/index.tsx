@@ -4,14 +4,15 @@ type ButtonType = "btn1" | "btn2"
 
 interface ButtonProps {
     children?: ReactNode
+    type?: ButtonType
+    className?: string
 
-    type?:ButtonType
 }
 
 
-export const Button = ({children,type="btn1"}:ButtonProps) => {
+export const Button = ({ children, type = "btn1", className = "" }: ButtonProps) => {
     return (<>
-        <button className={`btn ${type}`}>
+        <button className={`btn ${type} ${className}`}>
             {children}
         </button>
     </>)
