@@ -5,7 +5,7 @@ const ClothingPage = () => (
     <Layout title="Prendas de vestir">
         <Banner
             title='Tienda de Ropa'
-            text='Ropa Disponible'
+            text='Prendas Disponible'
             button='Ir al carrito'
             img={[
                 "/images/caballero.jfif",

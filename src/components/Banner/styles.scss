@@ -18,7 +18,7 @@
 
         img {
             width: min(100%, 20rem);
-            
+
         }
     }
 
@@ -30,7 +30,7 @@
         margin-bottom: 3.68rem;
     }
 
-   
+
 
     &2 {
         .parrafo {
@@ -67,19 +67,20 @@
 
         .columna2 {
             display: flex;
-            justify-content: flex-start; /**colocar columna a la inversa**/
+            justify-content: flex-start;
+            /**colocar columna a la inversa**/
             display: grid;
-    
+
             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
             /* crea columnas con un ancho mínimo de 200px y máximo de 1fr */
             grid-gap: 10px;
             /* establece un espacio de 10px entre los elementos */
 
-            img{
-                
+            img {
+
                 width: 100%;
                 height: 100%;
-                object-fit: cover; 
+                object-fit: cover;
             }
         }
     }

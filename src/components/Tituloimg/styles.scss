@@ -10,12 +10,12 @@
         height: 100%;
         object-fit: cover;
 
-        filter: brightness(0.5) blur(1px);
+        filter: brightness(0.9) blur(1px);
         z-index: 0;
     }
 
     .text {
-        color: white;
+        color:whitesmoke;
         z-index: 1;
 
         grid-row: 1 / 2;
@@ -28,15 +28,6 @@
         display: flex;
         justify-content: center;
     }
-    &2{
-        img{ 
-            filter: brightness(0.8) blur(1px);
-
-        }
-
+    
     }
-    &3{
-        grid-template-rows: 100px;
-        
-    }
-}
+   

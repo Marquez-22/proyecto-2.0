@@ -1,28 +1,20 @@
+
+import { Formulariologin } from "../components/Formulariologin"
 import Layout from "../components/Layout"
-import{ Tituloimg } from "../components/Tituloimg"
-
-
+import { Tituloimg } from "../components/Tituloimg"
 
 const LoginPage = () => (
     <Layout title="Acceder">
-        <Tituloimg 
-        img="/images/floreslogin.jfif"
-        title=" login"
-        type= "tituloimg2"
-
-
-
+        <Tituloimg
+            img="/images/fondo.png"
+            title=" login"
+            type="tituloimg2"
         />
 
-
-
-
-       
-   
-
+        <Formulariologin />
         
-    </Layout>   
-    
-    )
-    
-    export default LoginPage
+    </Layout>
+
+)
+
+export default LoginPage
