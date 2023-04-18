@@ -1,8 +1,7 @@
 
 import { Input } from "../Input"
-import { Link } from "../Link"
 import { Button } from "../Button"
-import Layout from "../Layout"
+
 
 
 type FormulariosignupType = "formsignup1"
@@ -16,31 +15,24 @@ interface FormulariosignupProps {
 export const Formulariosignup = () => {
     return (<>
         <form>
+
+            <Input
+                name="Nombre"
+                placeholder="Nombre"
+                typeinput="text"
+            />
             <Input
                 name="Email"
                 placeholder="Email"
-                typeinput="email"
+                typeinput="text"
             />
+
             <Input
-                name="Password"
+                name="Contraseña"
                 placeholder="Contraseña"
-                typeinput="password"
+                typeinput="text"
             />
-
-            
-            <Link
-                href="">
-                ¿Olvidaste tu contraseña? 
-
-            </Link>
-
-            <Link
-                href="">
-                Crear cuenta 
-
-            </Link>
-            <Button>Sign up</Button>
-
+            <Button>Log in</Button>
 
         </form>
 

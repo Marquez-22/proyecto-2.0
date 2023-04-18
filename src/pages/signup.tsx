@@ -8,7 +8,7 @@ const SignupPages = () => (
     <Layout title="Iniciar Sesion">
         <Tituloimg
             img="/images/fondo.png"
-            title="Iniciar Sesion"
+            title="Registrarse"
             type="tituloimg3"
 
 
