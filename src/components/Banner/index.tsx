@@ -3,7 +3,7 @@ import { Text } from "../Text"
 import { Button } from "../Button"
 import { Container } from "../Container"
 
-type BannerType = "banner1" | "banner2"|"banner3"
+type BannerType = "banner1" | "banner2"|"banner3"|"banner4"
 
 interface BannerProps {
     children?: ReactNode

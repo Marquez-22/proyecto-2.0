@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Poppins";
   src: url("/fonts/poppins/Poppins-Thin.ttf") format("truetype");
@@ -136,7 +137,6 @@ html {
   color: rgba(68, 195, 235, 0.8);
   text-transform: uppercase;
 }
-
 .banner {
   display: flex;
   justify-content: left;
@@ -171,6 +171,32 @@ html {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1rem;
+}
+.banner4 {
+  display: flex;
+  gap: 10rem;
+}
+.banner4 .columna1 {
+  order: 1;
+  align-items: flex-start;
+}
+.banner4 .parrafo {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.banner4 .columna2 {
+  display: flex;
+  justify-content: flex-start; /**colocar columna a la inversa**/
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  /* crea columnas con un ancho mínimo de 200px y máximo de 1fr */
+  grid-gap: 10px;
+  /* establece un espacio de 10px entre los elementos */
+}
+.banner4 .columna2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=index.css.map */
