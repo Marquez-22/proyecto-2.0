@@ -1,7 +1,13 @@
 import Layout from "../components/Layout"
+import { Tituloimg } from "../components/Tituloimg"
 
 const ServicesPage = () => (
-<Layout title="Servicios"></Layout>   
+<Layout title="Servicios">
+    <Tituloimg
+        img="/images/fondo.jpg"
+        title="Nuestros Servicios"
+    />
+</Layout>   
 
 )
 
