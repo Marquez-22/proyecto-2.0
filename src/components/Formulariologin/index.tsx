@@ -1,6 +1,6 @@
 import { Button } from "../Button"
 import { Input } from "../Input"
-import {Link} from "../Link"
+
 
 type FormulariologinType = "formloginType1" | "formloginType2"
 
@@ -13,26 +13,22 @@ export const Formulariologin = () => {
     return (<>
         <form >
             <Input
-                name="Email"
-                placeholder="Email"
-                typeinput="email"
+                name="Nombre"
+                placeholder="Nombre"
+                typeinput="text"
             />
             <Input
-                name="Password"
-                placeholder="Contraseña"
-                typeinput="password"
+                name="Email"
+                placeholder="Email"
+                typeinput="text"
             />
-            <Link
-                href="">
-                ¿Olvidaste tu contraseña?
-                
-            </Link>
 
-            <Link
-                href="">
-                Crear cuenta
-                
-            </Link>
+            <Input
+                name="Contraseña"
+                placeholder="Contraseña"
+                typeinput="text"
+            />
+
             <Button>Log in</Button>
         </form>
 

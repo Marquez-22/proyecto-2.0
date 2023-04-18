@@ -1,5 +1,5 @@
 
-import { Formulariologin } from "../components/Formulariologin"
+import { Formulariosignup } from "../components/Formulariosignup"
 import Layout from "../components/Layout"
 import { Tituloimg } from "../components/Tituloimg"
 
@@ -13,7 +13,7 @@ const SignupPages = () => (
 
 
         />
-         <Formulariologin />
+         <Formulariosignup />
 
         
     </Layout>

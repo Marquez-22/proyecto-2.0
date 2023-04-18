@@ -4,10 +4,10 @@ import Layout from "../components/Layout"
 import { Tituloimg } from "../components/Tituloimg"
 
 const LoginPage = () => (
-    <Layout title="Acceder">
+    <Layout title="Registrarse">
         <Tituloimg
             img="/images/fondo.png"
-            title=" login"
+            title=" Registrarse"
             type="tituloimg2"
         />
 
