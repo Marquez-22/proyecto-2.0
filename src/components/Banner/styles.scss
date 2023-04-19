@@ -1,20 +1,46 @@
 .banner {
     display: flex;
     justify-content: left;
+    flex-direction: column;
+
+    /*=>para que los elementos se coloquen uno debajo del otro obligado*/
+    @media (min-width:992px) {
+        flex-direction: row;
+    }
 
     .columna1 {
         flex: 1;
         align-items: end;
         display: flex;
         flex-wrap: wrap;
+       
+        .content-info{
+            display: flex;
+            flex-direction: column;
+
+            //celular
+            align-items: center;
+            @media (min-width: 992px){
+                //compotuadora
+                align-items: start;
+            }
+        }
     }
 
     .columna2 {
         flex: 1;
-        justify-content: end;
         display: flex;
         align-items: center;
         flex-wrap: wrap;
+
+
+        //celulares
+        justify-content: center;
+
+        @media (min-width:992px) {
+            // computadora
+            justify-content: end;
+        }
 
         img {
             width: min(100%, 20rem);

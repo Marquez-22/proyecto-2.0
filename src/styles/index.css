@@ -54,7 +54,45 @@
   font-style: normal;
 }
 html {
-  font-size: 16px;
+  overflow: hidden;
+  overflow-y: auto;
+  /** Media query: sirve para estblecer estilos que se aplica bajo una regla de css,
+      se utiliza en pixeles, sirve para ser responsi que se muestre bien en movil, tablet, computadora
+
+      en css la regla se aplca bajo las siguientes condiciones:
+      1) Se aplica de menor a mayor
+
+
+
+      **/
+  font-size: 10px; /* a medida que cambia el tamaño de la letra el font-size de html todas las unidades en REM se actualiza, se aplica de acuerdo al tamaño*/
+}
+@media (min-width: 576px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (min-width: 992px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1200px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+body {
+  width: 100vw; /*vw:porcentaje en relacion al ancho de  la pantalla*/
+  min-height: 100vh; /* vh: proporcion al alto de la pantalla*/
+  overflow: hidden;
+  margin: 0;
 }
 
 * {
@@ -66,15 +104,34 @@ html {
   display: flex;
   align-items: center;
   margin-bottom: 3.56rem;
+  padding-top: 1rem;
+  gap: 1rem; /*=> Gap solo, se utiliza para separar columna y fila, funcionando con display flex y dispaly grid*/
+  flex-direction: column;
+}
+@media (min-width: 992px) {
+  .cabecera .menu { /* cada componenete debe aplicar el responsive, flex-direction: row  y column se coloca  uno debajp del otro*/
+    flex-direction: row;
+  }
 }
 .cabecera .menu .columna2 {
   display: flex;
-  gap: 3.37rem;
+  flex-wrap: wrap; /*=> en caso de que el elemento no quepa uno al lado del otro lo coloca hacia abajo*/
+  column-gap: 3.37rem; /*=> separar horizontal entre columnas*/
+  row-gap: 0.5rem; /*separar verticalmente entre filas*/
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .cabecera .menu .columna2 {
+    justify-content: left;
+  }
 }
 .cabecera .menu .columna3 {
+  flex-wrap: wrap;
   display: flex;
   gap: 3rem;
+  row-gap: 1rem;
   align-items: center;
+  justify-content: center;
 }
 
 .btn {
@@ -140,6 +197,13 @@ html {
 .banner {
   display: flex;
   justify-content: left;
+  flex-direction: column;
+  /*=>para que los elementos se coloquen uno debajo del otro obligado*/
+}
+@media (min-width: 992px) {
+  .banner {
+    flex-direction: row;
+  }
 }
 .banner .columna1 {
   flex: 1;
@@ -147,12 +211,27 @@ html {
   display: flex;
   flex-wrap: wrap;
 }
+.banner .columna1 .content-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 992px) {
+  .banner .columna1 .content-info {
+    align-items: start;
+  }
+}
 .banner .columna2 {
   flex: 1;
-  justify-content: end;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  justify-content: center;
+}
+@media (min-width: 992px) {
+  .banner .columna2 {
+    justify-content: end;
+  }
 }
 .banner .columna2 img {
   width: min(100%, 20rem);

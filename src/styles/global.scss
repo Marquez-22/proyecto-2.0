@@ -1,6 +1,48 @@
-html{
-    font-size: 16px;
+html {
+    overflow: hidden;
+    overflow-y: auto;
+
+    /** Media query: sirve para estblecer estilos que se aplica bajo una regla de css,
+        se utiliza en pixeles, sirve para ser responsi que se muestre bien en movil, tablet, computadora
+
+        en css la regla se aplca bajo las siguientes condiciones:
+        1) Se aplica de menor a mayor
+
+        
+        
+        **/
+
+        font-size: 10px; /* a medida que cambia el tamaño de la letra el font-size de html todas las unidades en REM se actualiza, se aplica de acuerdo al tamaño*/
+    //  boostrap => Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) {
+        font-size: 12px;
+    }
+
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) {
+        font-size: 14px;
+    }
+
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) {
+        font-size: 16px;
+    }
+
+    // Extra large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) {
+        font-size: 18px;
+    }
+
+
 }
-*{
+
+body {
+    width: 100vw; /*vw:porcentaje en relacion al ancho de  la pantalla*/
+    min-height: 100vh; /* vh: proporcion al alto de la pantalla*/
+    overflow:hidden;
+    margin: 0;
+}
+
+* {
     box-sizing: border-box;
 }

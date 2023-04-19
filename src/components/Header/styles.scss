@@ -5,11 +5,24 @@
         display: flex;
         align-items: center;
         margin-bottom: 3.56rem;
+        padding-top: 1rem;
+        gap: 1rem; /*=> Gap solo, se utiliza para separar columna y fila, funcionando con display flex y dispaly grid*/
 
+        flex-direction: column;
+        @media (min-width: 992px) { /* cada componenete debe aplicar el responsive, flex-direction: row  y column se coloca  uno debajp del otro*/
+
+            flex-direction: row;
+        }
       
         .columna2{
             display: flex;
-            gap: 3.37rem;
+            flex-wrap: wrap;/*=> en caso de que el elemento no quepa uno al lado del otro lo coloca hacia abajo*/
+            column-gap: 3.37rem; /*=> separar horizontal entre columnas*/
+            row-gap: .5rem; /*separar verticalmente entre filas*/
+            justify-content: center;
+            @media (min-width: 768px) { 
+                justify-content: left;
+            }
         }
         
         .logo{
@@ -17,9 +30,14 @@
         }
         
         .columna3{
+            flex-wrap: wrap;
             display: flex;
             gap: 3rem;
+            row-gap: 1rem;
             align-items: center;
+            justify-content: center;
+
+
         }
     }
 }
