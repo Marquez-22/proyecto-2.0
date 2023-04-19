@@ -2,11 +2,16 @@
     width: min(100%,80rem);
     padding: 0 1rem ;
     margin: auto;
-    &1{
 
+    &1{
+        @media (min-width: 992px){
+            width: min(100%,95rem);
+        }
     }
     &2{
         width: min(100%,50rem);
 
     }
+
+
 }
