@@ -254,6 +254,12 @@ body {
 }
 .banner .parrafo {
   margin-bottom: 3.68rem;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .banner .parrafo {
+    text-align: left;
+  }
 }
 .banner2 .parrafo {
   font-size: 1rem;
@@ -268,11 +274,6 @@ body {
   justify-content: center;
   align-items: center;
   display: flex;
-}
-@media (min-width: 992px) {
-  .banner3 .columna1 {
-    justify-content: end;
-  }
 }
 .banner4 {
   display: flex;
