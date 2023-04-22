@@ -1,0 +1,34 @@
+.iconosmultiples {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+
+    //cecular
+    //aqui
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 992px) {
+        //computadora
+        //aqui
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .icono1 {
+
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .icono2 {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
+    .icono3 {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        grid-area: 2 / 1 / 3 / 3;
+    }
+}
